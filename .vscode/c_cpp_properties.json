@@ -6,7 +6,7 @@
         "${workspaceFolder}/engine/src/**",
         "${VULKAN_SDK}/include"
       ],
-      "defines": ["_DEBUG", "UNICODE", "_UNICODE", "KEXPORT"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE", "EPHEXPORT"],
       "compilerPath": "/usr/bin/clang",
       "cStandard": "c17",
       "cppStandard": "c++17",
@@ -18,7 +18,7 @@
         "${workspaceFolder}/engine/src/**",
         "${VULKAN_SDK}/include"
       ],
-      "defines": ["_DEBUG", "UNICODE", "_UNICODE", "KEXPORT"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE", "EPHEXPORT"],
       "windowsSdkVersion": "10.0.18362.0",
       "compilerPath": "C:\\Program Files\\LLVM\\bin\\clang.exe",
       "cStandard": "c17",
