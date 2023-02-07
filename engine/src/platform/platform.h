@@ -5,7 +5,7 @@ typedef struct platform_state {
     void* internal_state;
 } platform_state;
 
-EPHAPI b8 platform_startup(
+b8 platform_startup(
     platform_state* plat_state,
     const char* application_name,
     i32 x,
@@ -14,11 +14,11 @@ EPHAPI b8 platform_startup(
     i32 height
 ); 
 
-EPHAPI void platform_shutdown(platform_state* plat_state);
-EPHAPI b8 platform_pump_messages(platform_state* plat_state);
+void platform_shutdown(platform_state* plat_state);
+b8 platform_pump_messages(platform_state* plat_state);
 
-void* platform_allocate(u64 size, b8 aligned);
-void  platform_free(void* block, b8 aligned);
+EPHAPI void* platform_allocate(u64 size, b8 aligned); // temp expose TODO: remove exposure
+EPHAPI void  platform_free(void* block, b8 aligned); // temp expose : TODO: remove exposure 
 void* platform_zero_memory(void* block, u64 size);
 void* platform_copy_memory(void* dest, const void* source, u64 size);
 void* platform_set_memory(void* dest, i32 value, u64 size);
